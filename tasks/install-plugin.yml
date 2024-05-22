@@ -3,7 +3,13 @@
 #
 # Installs one plugin.
 
+- name: Use supplied plugin name.
+  when: vim_plugin_install.name is defined
+  ansible.builtin.set_fact:
+    vim_plugin_name: "{{ vim_plugin_install.name }}"
+
 - name: Determine plugin name.
+  when: vim_plugin_install.name is undefined
   ansible.builtin.set_fact:
     vim_plugin_name: "{{ (vim_plugin_install.repo | basename | splitext)[0] }}"
 
