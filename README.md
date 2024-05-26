@@ -34,6 +34,7 @@ The following variables are used in the role. See also Example Playbook
 
 | Variable name | Default value | Description |
 |---------------|---------------|-------------|
+| `vim_become` | `false` | Whether to `become` when installing packages. |
 | `vim_installed_packages`      | `["vim"]`         | A list of packages to install (passed to Ansible's Package module). |
 | `vim_removed_packages`        | `[]`              | A list of packages to remove (e.g. on Ubuntu, it might be preferable to remove `vim-tiny`). |
 | `vim_owner`                   | `""`              | The system user to install Vim and/or associated plugins for. |
