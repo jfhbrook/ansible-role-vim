@@ -3,7 +3,7 @@
 An Ansible role to install Vim and plugins on Linux and macOS.
 
 This is a friendly fork of [ctorgalson/ansible-role-vim](https://github.com/ctorgalson/ansible-role-vim),
-which has by far my favorite architecturally out of the vim roles I've seen.
+which has by far my favorite architecture out of the vim roles I've seen.
 That said, I've made a number of patches:
 
 - (bugfix) Drop curly braces in `when` statement
