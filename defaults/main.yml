@@ -1,6 +1,7 @@
 ---
 # defaults file for ansible-role-vim
 
+vim_become: false
 vim_installed_packages:
   - "vim"
 vim_removed_packages: []
