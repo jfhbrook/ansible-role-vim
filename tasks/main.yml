@@ -2,6 +2,7 @@
 # tasks file for ansible-role-vim.
 
 - name: Perform package install and removal for Vim and Vim plugin install.
+  when: "vim_manage_packages|bool == true"
   ansible.builtin.include_tasks: "manage-packages.yml"
 
 - name: Perform setup tasks for Vim and Vim plugin install.

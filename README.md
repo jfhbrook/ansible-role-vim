@@ -10,6 +10,7 @@ That said, I've made a number of patches:
 - Allow setting the plugin name
 - Only check before continuing if version check was run (allows --check mode)
 - Option to `become` when installing packages
+- Option to skip installing packages - this allows users to write faster playbooks by consolidating package install steps
 
 ---
 
